@@ -13,7 +13,7 @@ public class UserService {
 
     @Autowired
     UserMapper userMapper;
-    public UserInfo selectUser(String userName){
-        return userMapper.selectUser(userName);
+    public UserInfo selectUser(String username,String password){
+        return userMapper.selectUser(username, password);
     }
 }
